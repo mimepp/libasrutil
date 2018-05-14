@@ -1,0 +1,45 @@
+asrutil is a utility for ASR (automatic speech recognition), it is based on baidu asr sample.
+=====================================================
+(You can use it in commercial software, but please let me know.)
+This application is dedicated to my lovely son (Hean Yu).
+
+How to build asrutil from source code?
+=====================================================
+o download:
+  git clone https://github.com/mimepp/libasrutil.git
+
+o prepare before configure
+  please install depends, on ubuntu e.g.:
+  sudo apt-get install gtk-doc-tools libjson-c-dev libcurl4-nss-dev libssl-dev
+
+  - json-c will be used for parse response of request to baidu api
+  - curl will be used for access baidu api
+  - crypto will be used for MD5 function
+
+o configure:
+  cd libasrutil
+  ./autogen.sh
+  ./configure
+  (run ./configure --help for more options)
+
+o build:
+  make
+
+o install (need root)
+  make install
+
+o run the test
+  make run_all
+  there is VAD (Voice Active Detection) in run_voice_zh_4, this is a good sample for your reference.
+
+o other
+  the folder of media_files is helpful to you if you do not have media file for test.
+
+How to build and run asrutil on target board.
+=====================================================
+TODO
+
+Where can I get more information:
+=====================================================
+BLOG: http://blog.csdn.net/mimepp
+Still have problems please send email to yut616@gmail.com

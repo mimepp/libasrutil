@@ -1,0 +1,14 @@
+INCLUDES = \
+	-Wall	\
+	 -g	\
+	-I$(abs_top_srcdir)/src
+
+ASRUTIL_LIB_LDFLAGS = \
+	-ljson-c	\
+	-lssl		\
+	-lcrypto	\
+	-lcurl
+
+ASRUTIL_BIN_LDFLAGS = \
+	$(abs_top_builddir)/src/libasrutil.la	\
+	$(ASRUTIL_LIB_LDFLAGS)
