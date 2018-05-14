@@ -5,7 +5,6 @@ INCLUDES = \
 
 ASRUTIL_LIB_LDFLAGS = \
 	-ljson-c	\
-	-lssl		\
 	-lcrypto	\
 	-lcurl
 
