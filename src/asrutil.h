@@ -1,6 +1,8 @@
 #ifndef	__ASRUTIL_H__
 #define	__ASRUTIL_H__
 
+#include <stdio.h>
+
 #define ASRUTIL_APP_NAME			"asrutil"
 #define ASRUTIL_VERSION				"0.1"
 
